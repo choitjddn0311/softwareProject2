@@ -50,7 +50,7 @@ void loop() {
   digitalWrite(PIN_LED, toggle);
   delay(1000);
 }
-```
 
 int toggle_state(int toggle) {
   return !toggle; <-- ! 연산자를 활용해 값을 반전시킴 (0 → 1, 1 → 0 반복). 원래 코드(return toggle;)는 값이 그대로 유지되어 LED 상태가 안 바뀌는 문제가 있었음.
+```
